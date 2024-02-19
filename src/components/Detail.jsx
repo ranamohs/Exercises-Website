@@ -10,20 +10,19 @@ const Detail = ({ exerciseDetail }) => {
   // console.log(gifUrl);
   const extraDetail = [
     {
-        icon:BodyPartImage,
-        name:bodyPart
+      icon: BodyPartImage,
+      name: bodyPart,
     },
     {
-        icon:TargetImage,
-        name:target
+      icon: TargetImage,
+      name: target,
     },
     {
-        icon:EquipmentImage,
-        name:equipment
+      icon: EquipmentImage,
+      name: equipment,
     },
+  ];
 
-  ]
-  
   return (
     <>
       <Stack
@@ -41,17 +40,32 @@ const Detail = ({ exerciseDetail }) => {
           <Typography variant="h6">
             Exercises Keep ypu Strong . {name} {` `}
             is one of the best exercises to target your {target}. it will help
-            your improve ypur mood and gain energy.
+            your improve your mood and gain energy.
           </Typography>
-          {extraDetail.map((item) =>(
-            <Stack key={item.name} direction="row" gap="24px" alignItems="center" >
-                <Button sx={{backgroundColor:'#fff2db' , borderRadius:'50%' , width:'100px' , height:'100px'}}>
-                    <img src={item.icon} alt={bodyPart} style={{width:'50px' , height:'50px'}}></img>
-                </Button>
-                <Typography textTransform="capitalize" variant="h5">
-                    {item.name}
-                </Typography>
-
+          {extraDetail.map((item) => (
+            <Stack
+              key={item.name}
+              direction="row"
+              gap="24px"
+              alignItems="center"
+            >
+              <Button
+                sx={{
+                  backgroundColor: "#fff2db",
+                  borderRadius: "50%",
+                  width: "100px",
+                  height: "100px",
+                }}
+              >
+                <img
+                  src={item.icon}
+                  alt={bodyPart}
+                  style={{ width: "50px", height: "50px" }}
+                ></img>
+              </Button>
+              <Typography textTransform="capitalize" variant="h5">
+                {item.name}
+              </Typography>
             </Stack>
           ))}
         </Stack>

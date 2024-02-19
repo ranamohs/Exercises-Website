@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
 import Logo from "../assets/images/Logo.png";
-// import height from "./../../node_modules/dom-helpers/esm/height";
-// import { margin } from "./../../node_modules/@mui/system/esm/spacing";
-// import style from "./../../node_modules/dom-helpers/esm/css";
 
 const Navbar = () => {
   return (
