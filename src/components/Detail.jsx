@@ -38,7 +38,7 @@ const Detail = ({ exerciseDetail }) => {
         <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
           <Typography variant="h3">{name}</Typography>
           <Typography variant="h6">
-            Exercises Keep ypu Strong . {name} {` `}
+            Exercises Keep you Strong . {name} {` `}
             is one of the best exercises to target your {target}. it will help
             your improve your mood and gain energy.
           </Typography>
